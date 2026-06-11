@@ -14,13 +14,13 @@ The public part of the dataset comprises of 248,655 images of 1,310 subjects wit
 
 As a starting point for the UERC26, we provide the following files:
 
-### uerc26_dataset.py
+### dataset.py
 
 Pytorch dataset classes for loading the data. It provides two classes: UERCDataset for the identification task and UERCPairwiseDataset for the verification task. Both classes can be used to load the public and sequestered datasets. There are also some helper functions for splitting the data and creating pairs for the verification task.
 
 Feel free to modify the dataset classes as needed, but make sure to keep the same interface for loading the data.
 
-### uerc26_utils.py
+### utils.py
 
 This file contains utility functions for computing evaluation metrics, such as ROC AUC, and for computing the RT1 and RT2 metrics based on the labels, scores, and inference times. The compute_metrics function takes in the labels, scores, inference times, and optionally the model to compute the evaluation metrics.
 
@@ -40,11 +40,11 @@ This is a script that can be used to evaluate the performance of the extracted f
 
 This file contains the implementation of the scoring function for the UERC26. The scoring function takes in the computed metrics for each solution in corresponding submission folder and computes a final score based on the defined evaluation criteria. The score is computed based on the RT1 and RT2 metrics, as well as the inference time. The scoring function will be used to determine the final ranking of the solutions based on their performance on the sequestered dataset.
 
-### SUBMISSIONS folder
+### Model1 folder
 
 This folder is where all the submitted solutions will be stored. Each solution should be in its own subfolder with the following structure:
 
-```SUBMISSIONS/
+```Model1/
     solution_name/
         config.ini
         model.py
