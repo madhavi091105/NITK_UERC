@@ -1,0 +1,10 @@
+torch
+torchvision
+numpy
+scikit-learn
+matplotlib
+namegenerator
+tqdm
+timm
+torchmetrics
+termcolor
