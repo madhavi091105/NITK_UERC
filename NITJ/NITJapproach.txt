@@ -1,0 +1,34 @@
+[ START: Dataset Processed ]
+              │
+              ▼
+    ┌───────────────────┐
+    │  IMAGE SELECTION  │
+    └─────────┬─────────┘
+              │
+      ┌───────┴───────┐
+      ▼               ▼
+ [ GALLERY POOL ] [ PROBE POOL ]
+  - Left: 1-5      - Left: 6-10
+  - Right: 11-15   - Right: 16-20
+  (Total: 10)      (Total: 10)
+      │               │
+      └───────┬───────┘
+              │ (Each Probe image is compared with all Gallery images of all subject)
+              ▼
+   ┌─────────────────────┐
+   │  COMPARISON ENGINE  │
+   └──────────┬──────────┘
+              │
+      ┌───────┴────────────────────────┐
+      ▼                                ▼
+[ IF: Same Subject ]        [ IF: Different Subject ]
+(e.g., Subj 1 vs Subj 1)    (e.g., Subj 1 vs Subj 2)
+      │                                │
+      ▼                                ▼
+  [ FLAG = 1 ]                     [ FLAG = 0 ]
+(Genuine Match)                  (Imposter Match)
+      │                                │
+      └───────────────┬────────────────┘
+                      │
+                      ▼
+        [ OUTPUT: Matrix Text File ]
