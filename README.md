@@ -16,7 +16,7 @@ Full methodology and results are documented in `/Docs`.
 
 ## Models Explored
 
-TinyViT · ResNet-50 · EfficientNet-B3 · MobileNetV3 · ViT-Base
+TinyViT · ResNet-50 · EfficientNet-B3 · MobileNetV3 · ViT-Base . Siamese Network . Ensemble Embeddings
 
 > TinyViT (Vision Transformer) gave the best results and was used for the final submission.
 
@@ -35,8 +35,7 @@ TinyViT · ResNet-50 · EfficientNet-B3 · MobileNetV3 · ViT-Base
 
 | Dataset | Protocol | Outcome |
 |---------|----------|---------|
-| UERC | Ear-matching | **2nd Place** |
-| NITJ | Full Cross-Subject | `TinyViT_NITJ_Full_CrossSubject_Scores.txt` |
+| UERC | Model optimisation with greater accuracy | **2nd Place** |
 
 ---
 
